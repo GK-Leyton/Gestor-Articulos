@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="350dp"
+    android:layout_height="410dp">
+
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="104dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="104dp"
+        android:gravity="center"
+        android:text="Editando el tipo de articulo o procedencia!!!"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/txt_revista_centro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="2dp"
+        android:text=""
+        android:textColor="#6D4375"
+        app:layout_constraintBottom_toTopOf="@+id/spinnerRevistaCentro"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/txt_edicion_acta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="2dp"
+        android:text=""
+        android:textColor="#6D4375"
+        app:layout_constraintBottom_toTopOf="@+id/spinnerEdicionActa"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Spinner
+        android:id="@+id/spinnerEdicionActa"
+        android:layout_width="319dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="45dp"
+        android:background="@drawable/rounded_gray_5dp"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/btnEditarArticulo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Spinner
+        android:id="@+id/spinnerRevistaCentro"
+        android:layout_width="319dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginBottom="45dp"
+        android:background="@drawable/rounded_gray_5dp"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/spinnerEdicionActa"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerTipoArticulo" />
+
+    <Spinner
+        android:id="@+id/spinnerTipoArticulo"
+        android:layout_width="319dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="45dp"
+        android:background="@drawable/rounded_gray_5dp"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+    <TextView
+        android:id="@+id/txtTipoArticulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="2dp"
+        android:text="Tipo Articulo"
+        android:textColor="#6D4375"
+        app:layout_constraintBottom_toTopOf="@+id/spinnerTipoArticulo"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnEditarArticulo"
+        android:layout_width="190dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginEnd="80dp"
+        android:layout_marginBottom="17dp"
+        android:backgroundTint="#87CEEB "
+        android:text="Crear"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

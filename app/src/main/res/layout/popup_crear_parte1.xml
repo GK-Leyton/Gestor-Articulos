@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="350dp"
+    android:layout_height="180dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/rounded_white_5dp"
+    >
+
+
+    <FrameLayout
+        android:id="@+id/frame1"
+        android:layout_width="55dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="29dp"
+        android:background="@drawable/rounded_phantom_white_5dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:id="@+id/btnCrearArticulo"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal|top"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/rounded_coral_5dp"
+            app:srcCompat="@drawable/agregar_libro" />
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center"
+            android:gravity="bottom|center_horizontal"
+            android:text="Articulo"
+            android:textColor="#000000"
+            android:textSize="10sp" />
+    </FrameLayout>
+
+
+    <FrameLayout
+        android:id="@+id/frame2"
+        android:layout_width="55dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/rounded_phantom_white_5dp"
+        app:layout_constraintStart_toEndOf="@+id/frame1"
+        app:layout_constraintTop_toBottomOf="@+id/textView3">
+
+        <ImageButton
+            android:id="@+id/btnCrearRevista"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal|top"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/rounded_coral_5dp"
+            app:srcCompat="@drawable/agregar_revista" />
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center"
+            android:gravity="bottom|center_horizontal"
+            android:text="Revista"
+            android:textColor="#000000"
+            android:textSize="10sp" />
+    </FrameLayout>
+
+
+    <FrameLayout
+        android:id="@+id/frame3"
+        android:layout_width="55dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/rounded_phantom_white_5dp"
+        app:layout_constraintStart_toEndOf="@+id/frame2"
+        app:layout_constraintTop_toBottomOf="@+id/textView3">
+
+        <ImageButton
+            android:id="@+id/btnCrearCongreso"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal|top"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/rounded_coral_5dp"
+            app:srcCompat="@drawable/agregar_congreso" />
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center"
+            android:gravity="bottom|center_horizontal"
+            android:text="Congreso"
+            android:textColor="#000000"
+            android:textSize="10sp" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/frame4"
+        android:layout_width="55dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="29dp"
+        android:layout_marginEnd="26dp"
+        android:background="@drawable/rounded_phantom_white_5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/frame3"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:id="@+id/btnCrearTema"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal|top"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/rounded_coral_5dp"
+            app:srcCompat="@drawable/agregar_tema" />
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center"
+            android:gravity="bottom|center_horizontal"
+            android:text="Temas/edic"
+            android:textColor="#000000"
+            android:textSize="10sp" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="125dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="125dp"
+        android:text="Deseas crear un"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <FrameLayout
+        android:id="@+id/frame5"
+        android:layout_width="55dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="11dp"
+        android:background="@drawable/rounded_phantom_white_5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frame1">
+
+        <ImageButton
+            android:id="@+id/btnCrearInformeTecnico"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal|top"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/rounded_coral_5dp"
+            app:srcCompat="@drawable/icono_informe_tecnico" />
+
+        <TextView
+            android:id="@+id/textView16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center"
+            android:gravity="bottom|center_horizontal"
+            android:text="Inf. Tecnico"
+            android:textColor="#000000"
+            android:textSize="10sp" />
+    </FrameLayout>
+
+
+    <FrameLayout
+        android:id="@+id/frame6"
+        android:layout_width="55dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="11dp"
+        android:background="@drawable/rounded_phantom_white_5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/frame5"
+        app:layout_constraintTop_toBottomOf="@+id/frame2">
+
+        <ImageButton
+            android:id="@+id/btnCrearCentroInvestigacion"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal|top"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/rounded_coral_5dp"
+            app:srcCompat="@drawable/icono_centro_investigacion" />
+
+        <TextView
+            android:id="@+id/textView17"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center"
+            android:gravity="bottom|center_horizontal"
+            android:text="Centro Inv."
+            android:textColor="#000000"
+            android:textSize="10sp" />
+    </FrameLayout>
+
+
+    <FrameLayout
+        android:id="@+id/frame7"
+        android:layout_width="55dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="11dp"
+        android:background="@drawable/rounded_phantom_white_5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/frame6"
+        app:layout_constraintTop_toBottomOf="@+id/frame3">
+
+        <ImageButton
+            android:id="@+id/btnCrearInvestigador"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal|top"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/rounded_coral_5dp"
+            app:srcCompat="@drawable/icono_investigador" />
+
+        <TextView
+            android:id="@+id/textView18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center"
+            android:gravity="bottom|center_horizontal"
+            android:text="Erudito"
+            android:textColor="#000000"
+            android:textSize="10sp" />
+    </FrameLayout>
+
+
+    <FrameLayout
+        android:id="@+id/frame8"
+        android:layout_width="55dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="27dp"
+        android:layout_marginBottom="11dp"
+        android:background="@drawable/rounded_phantom_white_5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/frame7"
+        app:layout_constraintTop_toBottomOf="@+id/frame4">
+
+        <ImageButton
+            android:id="@+id/btnCrearTipoCongreso"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal|top"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/rounded_coral_5dp"
+            app:srcCompat="@drawable/icono_tipo_congreso" />
+
+        <TextView
+            android:id="@+id/textView19"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center"
+            android:gravity="bottom|center_horizontal"
+            android:text="Tipo Cong"
+            android:textColor="#000000"
+            android:textSize="10sp" />
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

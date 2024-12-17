@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="colorButtonDefault">#87CEEB</color>
+    <color name="colorButtonEnabled">#007BFF</color>
+    <color name="status_bar_color">#3700B3</color>
+    <color name="status_bar_color_dark">#121212</color>
+    <color name="dark_text">#333333</color>
+    <color name="primary_color">#2196F3</color>
+    <color name="background_light">#F5F5F5</color>
+</resources>

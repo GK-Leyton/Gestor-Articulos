@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:background="@drawable/paisaje_1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MenuPrincipalUsuario">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="84dp"
+        android:layout_height="86dp"
+        android:layout_marginStart="77dp"
+        android:layout_marginTop="25dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo_negro" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="36dp"
+        android:fontFamily="@font/amita"
+        android:gravity="center"
+        android:text="Las Siete Capas"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/imageView2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="78dp"
+        android:fontFamily="@font/amita"
+        android:gravity="center"
+        android:text="del conocimiento"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/imageView2"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="340dp"
+        android:layout_height="527dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="15dp"
+        android:background="@drawable/rounded_white_20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2">
+
+        <WebView
+            android:id="@+id/WVArticuloMásFamoso"
+            android:layout_width="330dp"
+            android:layout_height="460dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/rounded_web_view"
+            android:foregroundGravity="center">
+
+
+        </WebView>
+
+        <TextView
+            android:id="@+id/txtNombreArticulo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/almendra_italic"
+            android:gravity="center"
+            android:text="El articulo más popular \nNombre del articulo"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/btnMenos"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_gravity="end"
+            android:layout_marginTop="-4dp"
+            android:layout_marginEnd="10dp"
+            android:background="@android:color/transparent"
+            app:srcCompat="@drawable/icono_menos" />
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/btnOjo"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginEnd="12dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintEnd_toStartOf="@+id/textView1"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:srcCompat="@drawable/icono_ojo_animado" />
+
+    <FrameLayout
+        android:id="@+id/frameLibro"
+        android:layout_width="190dp"
+        android:layout_height="271dp"
+        android:foregroundGravity="center"
+        android:background="@drawable/rounded_white_5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" >
+
+        <ImageView
+            android:id="@+id/btnLibroPopular"
+            android:layout_width="180dp"
+            android:layout_height="261dp"
+            android:background="@drawable/libro"
+            android:layout_gravity="center" />
+
+
+        <TextView
+            android:id="@+id/txtNombreArticuloLibro"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|top"
+            android:layout_marginTop="50dp"
+            android:lineSpacingExtra="-15dp"
+            android:background="@drawable/rounded_transparent_lighter_white_5dp"
+            android:breakStrategy="high_quality"
+            android:fontFamily="@font/amita"
+            android:gravity="center"
+            android:text="Innovacion empresarial"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/txtNombreArticulo2"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center_horizontal|top"
+            android:layout_marginTop="150dp"
+            android:background="@drawable/rounded_white_500dp"
+            android:breakStrategy="high_quality"
+            android:gravity="center"
+            android:text="2"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+    </FrameLayout>
+
+    <ImageButton
+        android:id="@+id/btnMenu"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="11dp"
+        android:scaleType="center"
+        android:background="@drawable/rounded_white_500dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/icono_menu" />
+
+    <ImageButton
+        android:id="@+id/btnCrear"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="5dp"
+        android:background="@drawable/rounded_white_500dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/icono_agregar" />
+
+    <ImageButton
+        android:id="@+id/btnPerfilUsuario"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/rounded_white_500dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/icono_usuario" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

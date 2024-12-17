@@ -1,0 +1,238 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_constraint_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".CrearUsuario">
+
+    <ImageView
+        android:id="@+id/background_gif"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/oceano_de_nubes"
+        android:scaleType="centerCrop"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="320dp"
+        android:layout_height="560dp"
+        android:layout_marginBottom="90dp"
+        android:background="@drawable/rounded_transparent_lighter_white_5dp"
+        app:layout_constraintBottom_toBottomOf="@+id/background_gif"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="2dp"
+            android:gravity="center"
+            android:text="Nueva Contraseña"
+            android:textColor="#A44FB3"
+            app:layout_constraintBottom_toTopOf="@+id/txtContrasena"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtRespuestaSegura" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="2dp"
+            android:gravity="center"
+            android:text="Confirmar Nueva Contraseña"
+            android:textColor="#A44FB3"
+            app:layout_constraintBottom_toTopOf="@+id/txtConfirmarContrasena"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtContrasena" />
+
+
+        <EditText
+            android:id="@+id/txtConfirmarContrasena"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/rounded_white_5dp"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="Confirmar Contraseña"
+            android:inputType="textPassword"
+            android:text=""
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+        <EditText
+            android:id="@+id/txtContrasena"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/rounded_white_5dp"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="Contraseña"
+            android:inputType="textPassword"
+            android:paddingLeft="10dp"
+            android:text=""
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.472"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+        <EditText
+            android:id="@+id/txtRespuestaSegura"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/rounded_white_5dp"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="Respuesta"
+            android:inputType="text"
+            android:text=""
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+        <EditText
+            android:id="@+id/txtInsertarCadenaRandom"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/rounded_white_5dp"
+            android:ems="10"
+            android:gravity="center"
+            android:hint=""
+            android:inputType="text"
+            android:text=""
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:text="Ingresa la cadena de texo"
+            android:textColor="#A44FB3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtCadenaRandom" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="2dp"
+            android:text="Ingresa tu Respuesta"
+            android:textColor="#A44FB3"
+            app:layout_constraintBottom_toTopOf="@+id/txtRespuestaSegura"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtPreguntaSegura" />
+
+        <TextView
+            android:id="@+id/txtPreguntaSegura"
+            android:layout_width="210dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:text="Pregunta Segura"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtInsertarCadenaRandom" />
+
+        <TextView
+            android:id="@+id/txtCadenaRandom"
+            android:layout_width="210dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="6dp"
+            android:fontFamily="@font/allison"
+            android:gravity="center"
+            android:text="Cadena Random"
+            android:textColor="#DDDDDD"
+            android:background="@drawable/rounded_transparent_black_5dp"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/btnRecargar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btnCrearUsuario"
+            android:layout_width="210dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:backgroundTint="#FFFFFF"
+            android:fontFamily="@font/almendra_italic"
+            android:text="Cambiar Contraseña"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtConfirmarContrasena" />
+
+        <ImageButton
+            android:id="@+id/btnRecargar"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginBottom="24dp"
+
+            app:layout_constraintBottom_toTopOf="@+id/textView7"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtCadenaRandom"
+            app:srcCompat="@drawable/icono_recargar" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Comprueuba el Texto Generado"
+            app:layout_constraintBottom_toTopOf="@+id/txtCadenaRandom"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:textColor="#A44FB3"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageButton
+        android:id="@+id/btnVolver"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/rounded_white_500dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/icono_flecha_atras" />
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

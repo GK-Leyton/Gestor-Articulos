@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="350dp"
+    android:layout_height="470dp">
+
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="104dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="104dp"
+        android:text="Creando Una Edición!!!"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txtEditor"
+        android:layout_width="319dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/rounded_gray_5dp"
+        android:ems="10"
+        android:hint="Nombre del editor de la nueva edición"
+        android:inputType="text"
+        android:paddingLeft="10dp"
+        android:text=""
+        android:textColor="#000000"
+        android:textColorHint="#403030"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtTituloEdicion" />
+
+    <EditText
+        android:id="@+id/txtTituloEdicion"
+        android:layout_width="319dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/rounded_gray_5dp"
+        android:ems="10"
+        android:hint="Titulo de la nueva Edicion"
+        android:inputType="text"
+        android:paddingLeft="10dp"
+        android:text=""
+        android:textColor="#000000"
+        android:textColorHint="#403030"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+    <EditText
+        android:id="@+id/txtPaginaInicio"
+        android:layout_width="130dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/rounded_gray_5dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Pagina inicio"
+        android:inputType="number"
+        android:paddingLeft="10dp"
+        android:text=""
+        android:textColor="#000000"
+        android:textColorHint="#403030"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@+id/txtPaginaFin"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView17" />
+
+    <EditText
+        android:id="@+id/txtPaginaFin"
+        android:layout_width="130dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/rounded_gray_5dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Pagina fin"
+        android:inputType="number"
+        android:paddingLeft="10dp"
+        android:text=""
+        android:textColor="#000000"
+        android:textColorHint="#403030"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/txtPaginaInicio"
+        app:layout_constraintTop_toBottomOf="@+id/textView18" />
+
+    <Spinner
+        android:id="@+id/spinnerRevista"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/rounded_gray_5dp"
+        android:gravity="center"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtPaginaInicio" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dp"
+        android:text="Revista"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/spinnerRevista"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginBottom="2dp"
+        android:text="Titulo"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/txtTituloEdicion"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginBottom="2dp"
+        android:text="Editor"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/txtEditor"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="2dp"
+        android:text="Pagina Inicio"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/txtPaginaInicio"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtEditor" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="2dp"
+        android:text="Pagina Fin"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/txtPaginaFin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtEditor" />
+
+    <Button
+        android:id="@+id/btnCrearEdicion"
+        android:layout_width="190dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="80dp"
+        android:layout_marginBottom="17dp"
+        android:backgroundTint="#87CEEB "
+        android:text="Crear"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerRevista" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

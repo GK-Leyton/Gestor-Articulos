@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="282dp"
+    android:layout_height="135dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/rounded_white_5dp"
+    >
+
+
+    <FrameLayout
+        android:id="@+id/frame1"
+        android:layout_width="55dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="7dp"
+        android:background="@drawable/rounded_phantom_white_5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3">
+
+        <ImageButton
+            android:id="@+id/btnCrearTemaRevista"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal|top"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/rounded_coral_5dp"
+            app:srcCompat="@drawable/agregar_tema_revista" />
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center"
+            android:gravity="bottom|center_horizontal"
+            android:text="Revista"
+            android:textColor="#000000"
+            android:textSize="10sp" />
+    </FrameLayout>
+
+
+    <FrameLayout
+        android:id="@+id/frame2"
+        android:layout_width="55dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="26dp"
+        android:layout_marginBottom="7dp"
+        android:background="@drawable/rounded_phantom_white_5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/frame3"
+        app:layout_constraintStart_toEndOf="@+id/frame1"
+        app:layout_constraintTop_toBottomOf="@+id/textView3">
+
+        <ImageButton
+            android:id="@+id/btnCrearActaCongreso"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal|top"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/rounded_coral_5dp"
+            app:srcCompat="@drawable/agregar_acta_congreso" />
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center"
+            android:gravity="bottom|center_horizontal"
+            android:text="Acta Cong"
+            android:textColor="#000000"
+            android:textSize="10sp" />
+    </FrameLayout>
+
+
+    <FrameLayout
+        android:id="@+id/frame3"
+        android:layout_width="55dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="26dp"
+        android:layout_marginBottom="7dp"
+        android:background="@drawable/rounded_phantom_white_5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        app:layout_constraintVertical_bias="0.0">
+
+        <ImageButton
+            android:id="@+id/btnCrearEdicionRevista"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal|top"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/rounded_coral_5dp"
+            app:srcCompat="@drawable/agregar_edicion_revista" />
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center"
+            android:gravity="bottom|center_horizontal"
+            android:text="Edicion Rev"
+            android:textColor="#000000"
+            android:textSize="10sp" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="180dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="4dp"
+        android:gravity="center"
+        android:text="Deseas crear un tema\n para un/a"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

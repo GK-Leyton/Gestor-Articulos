@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="350dp"
+    android:layout_height="450dp">
+
+    <!-- Titulo principal -->
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Editando Palabras Clave de un Articulo"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Botón de edición -->
+    <Button
+        android:id="@+id/btnEditarPalabrasClave"
+        android:layout_width="190dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="17dp"
+        android:backgroundTint="#007BFF"
+        android:text="Editar"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <!-- ScrollView de palabras registradas -->
+    <ScrollView
+        android:id="@+id/scrollViewPalabrasRegistradas"
+        android:layout_width="145dp"
+        android:layout_height="245dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/rounded_transparent_lighter_salmon_5dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnEditarPalabrasClave"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6">
+
+        <LinearLayout
+            android:id="@+id/layoutPalabrasRegistradas"
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" />
+    </ScrollView>
+
+    <!-- ScrollView de palabras candidatas -->
+    <ScrollView
+        android:id="@+id/scrollViewTodasLasPalabras"
+        android:layout_width="145dp"
+        android:layout_height="245dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/rounded_transparent_lighter_salmon_5dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnEditarPalabrasClave"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/scrollViewPalabrasRegistradas"
+        app:layout_constraintTop_toBottomOf="@+id/textView6">
+
+        <LinearLayout
+            android:id="@+id/layoutPalabrasCandidatas"
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" />
+    </ScrollView>
+
+    <!-- Titulo de palabras registradas -->
+    <TextView
+        android:id="@+id/textView36"
+        android:layout_width="145dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="5dp"
+        android:gravity="center"
+        android:text="Palabras Existentes"
+        app:layout_constraintBottom_toTopOf="@+id/scrollViewPalabrasRegistradas"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <!-- Titulo de palabras candidatas -->
+    <TextView
+        android:id="@+id/textView37"
+        android:layout_width="145dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="5dp"
+        android:gravity="center"
+        android:text="Palabras Candidatas"
+        app:layout_constraintBottom_toTopOf="@+id/scrollViewTodasLasPalabras"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView36" />
+</androidx.constraintlayout.widget.ConstraintLayout>

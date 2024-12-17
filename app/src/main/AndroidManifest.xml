@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/icono_logo_portada"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/icono_logo_portada"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.SegundoParcial"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31">
+        <activity
+            android:name=".VistaReportes"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".VistaPerfilUsuario"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Reportes"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+
+        <service
+            android:name=".SoundService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity
+            android:name=".VistaCentros"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Centros"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".CambiarContraseña"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".VistaInformeTecnico"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".CrearUsuario"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".VistaEdiciones"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".VistaRevistas"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".VistaActas"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".VistaCongresos"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".VistaPerfilAutor"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".VistaArticulos"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Revistas"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Congresos"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Autores"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".TodosLosArticulos"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ArticulosEnDespacho"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ArticulosPorAutor"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MenuPrincipalUsuario"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ArticulosEnEstanteria"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".PantallaDeCarga"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

@@ -1,0 +1,4 @@
+<resources>
+    <dimen name="spacing">16dp</dimen> <!-- Espacio entre elementos -->
+    <dimen name="edge_spacing">25dp</dimen> <!-- Espacio del borde de la pantalla -->
+</resources>
